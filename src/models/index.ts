@@ -1,17 +1,16 @@
-interface User extends Omit<Address, 'phone'> {
-    id: number | string,
-    firstName: string,
-    lastName: string,
-
+interface User extends Omit<Address, "phone"> {
+  id: number | string;
+  firstName: string;
+  lastName: string;
 }
 
 interface Address extends Country {
-    city: string,
-    phone: string & number
+  city: string;
+  phone: string & number;
 }
 
 interface Country {
-    country?: string
+  country?: string;
 }
 
-export type { User, Address }
+export type { User, Address };
